@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flip Cards Spaced Equally</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+  body {
+  
+      background-image: url('https://ik.imagekit.io/tenthpin/media/qm_picture.png?tr=w-3000,fo-auto');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .glass-container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 80%;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      -webkit-backdrop-filter: blur(10px); /* Safari support */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border */
+      color: #fff;
+      text-align: center;
+    }
+
+    h1, p {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-container">
+  <div class="glass-box">
+  <!-- partial:index.partial.html -->
+  <div class="container mt-5">
+    <div class="row gy-4 justify-content-center align-items-stretch">
+      <!-- Flip Card 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+        <div class="flip-card w-100">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front">
+              <img src="https://images.pexels.com/photos/8940352/pexels-photo-8940352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Random Image" class="img-fluid w-100 h-100">
+              <div class="flip-text">Question One</div>
+            </div>
+            <!-- Back -->
+            <div class="flip-card-back">
+              <div class="content-container">
+                <h5>What is the main goal of CAR-T cell therapy</h5>
+                <p>  A) To replace damaged organs​​</p>
+                <p>  B) To engineer T cells to recognize and attack cancer cells​​</p>
+                <p>  C) To provide nutritional support​</p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+        <div class="flip-card w-100">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front">
+              <img src="https://plus.unsplash.com/premium_photo-1676325102928-8de80237f87c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Random Image" class="img-fluid w-100 h-100">
+              <div class="flip-text">Question Two</div>
+            </div>
+            <!-- Back -->
+            <div class="flip-card-back">
+              <div class="content-container">
+                <h5>How are modified cells typically delivered back into the patient?</h5>
+                <p>  A) Via text message</p>
+                <p>  B) Through IV or Injection​​</p>
+                <p>  C) By Carrier Pigeon​</p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+        <div class="flip-card w-100">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front">
+              <img src="https://images.unsplash.com/photo-1721355102239-5f5cbd2e8b66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Random Image" class="img-fluid w-100 h-100">
+              <div class="flip-text">Question Three</div>
+            </div>
+            <!-- Back -->
+            <div class="flip-card-back">
+              <div class="content-container">
+                <h5>What is SAP Cell and Gene Therapy Orchestration primarily used for?​</h5>
+                <p>  A) Managing financial transactions​​​</p>
+                <p>  B) Coordinating advanced therapy processes​​​</p>
+                <p>  C) Running cloud-based gaming applications​​</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- container end -->
+
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
